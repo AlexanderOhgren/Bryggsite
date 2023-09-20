@@ -1,0 +1,96 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}Main{% endblock %}
+
+{% block content %}
+
+<div class="cover-container" id="opacity-overlay">
+    <div class="contact-card">
+        <a href="javascript:void(0)" class="close-button" onclick="overlay_off()">&times;</a>
+        <p>mejladress: hassen@hassen.se</p>
+        <p>telefonnummer: 08-12312312</p>
+        <p>adress: Hassenvägen 23</p>
+    </div>
+</div>
+
+<div class="image-section">
+    <p>hassen bryggföretag <br> & <br> co</p>
+    <h1>stilrent<br>bra kvalité, bra pris<br>bryggor</h1>
+    <!-- <div class="image-box"></div> -->
+</div>
+
+<div class="text-section">
+    <h1>bla bla bla</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <button id="contact" class="contact-us-button" onclick="overlay_on()"><span class="button-text">Kontakta oss</span></button>
+</div>
+
+<!-- <div class="main-section">
+    <div class="main-sub-section">
+        <div class="main-sub-section-pictures"></div>
+        <div class="main-sub-section-pictures"></div>
+        <div class="main-sub-section-pictures"></div>
+        <div class="main-sub-section-pictures"></div>
+        <div class="main-sub-section-pictures"></div>
+        <div class="main-sub-section-pictures"></div>
+    </div>
+</div> -->
+
+<div class="image-section" style="background-image: url(/static/images/wire.jpg);">
+    <div class="slide-text-container">
+        <h1 class="slide-text" style="text-align: left; top: 50%; color: orangered;">cool</h1>
+        <h1 class="slide-text" style="text-align: left; top: 50%;">häftig text</h1>
+    </div>    
+</div>
+
+<div class="main-scroll-div">
+    <div class="scroll-section">
+        <div>
+            <button class="icon" onclick="scroll_left()"><i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-container">
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image">
+                    <h1>random shit</h1>
+                    <p>hejsan jag heter alexander och min flickvän är det bästa som finns</p>
+                </div>
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image">
+                    <p>hejsan</p>
+                </div>
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image">
+                <p>här står det grejer bla bla bla blabal</p>
+                </div>
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image"></div>
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image"></div>
+                <div class="scroll-child"><img class="scroll-image" src="{% static "images/wire.jpg" %}" alt="image" style="margin-right: 0;"></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scroll_right()"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-section" style="background-image: url(/static/images/leaves.jpg);">
+
+</div>
+<div id="about" class="about-section">
+    <h1>About</h1>
+    <div class="about-information">
+        <p>hejsan jag heter aöexamderma</p>
+        <div class="about-text">
+            <p>hejsan, här ska det stå en biograf om vad jag gör etc<br>
+                lite coola grejer</p>
+        </div>
+        <div class="about-image-container"><img class="about-image" src="{% static "images/wire.jpg" %}" alt="image">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

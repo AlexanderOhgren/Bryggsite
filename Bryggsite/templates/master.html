@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static "js/main.js" %}"></script>
+    <link href="https://fonts.cdnfonts.com/css/bodoni-std" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+</head>
+<body>
+    <div id="my_side_menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-button" onclick="closeMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#contact" style="scroll-behavior: smooth;">Contact</a>
+        <a href="#" style="scroll-behavior: smooth;">Work</a>
+        <a href="#about" style="scroll-behavior: smooth;">About</a>
+    </div>
+    <div style="display: inline-block; width: 100%; height: 12vh;"></div>
+    <nav>
+        <button class="menu-container" onclick="openMenu()">
+            <div class="bar1" onclick="openMenu()"></div>
+            <div class="bar2" onclick="openMenu()"></div>
+            <div class="bar3" onclick="openMenu()"></div>
+        </button>
+    </nav>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
